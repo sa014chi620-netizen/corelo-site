@@ -4,7 +4,7 @@
 
 backend:
   name: github
-  repo: YOUR_GITHUB_USERNAME/corelo-site   # ★ あとでご自分のリポジトリ名に書き換え
+  repo: sa014chi620-netizen/corelo-site   # ★ あとでご自分のリポジトリ名に書き換え
   branch: main
 
 # CMSから保存したファイルは src/ 配下のMarkdownを直接書き換えます
