@@ -1,0 +1,14 @@
+{
+  "title": "CoReLo",
+  "tagline": "考える・読む・話す ── 心理専門職のための学びの場",
+  "domain": "corelo.havcp.com",
+  "email": "co.re.lo.0529@gmail.com",
+  "nav": [
+    { "label": "ホーム", "url": "/" },
+    { "label": "研究会", "url": "/kenkyukai/" },
+    { "label": "セミナンス", "url": "/seminans/" },
+    { "label": "心理検査", "url": "/kensa/" },
+    { "label": "アーカイブ", "url": "/archive/" },
+    { "label": "お問い合わせ", "url": "/contact/" }
+  ]
+}

@@ -1,0 +1,131 @@
+# Sveltia CMS（Decap CMS 互換）設定ファイル
+# - GitHub に直接コミットして編集します
+# - GitHub OAuth は Sveltia の標準フローで完結（プロキシ不要）
+
+backend:
+  name: github
+  repo: YOUR_GITHUB_USERNAME/corelo-site   # ★ あとでご自分のリポジトリ名に書き換え
+  branch: main
+
+# CMSから保存したファイルは src/ 配下のMarkdownを直接書き換えます
+media_folder: "src/uploads"
+public_folder: "/uploads"
+
+# 公開URL（プレビュー用）
+site_url: https://corelo.havcp.com
+display_url: https://corelo.havcp.com
+
+collections:
+  # ===== 固定ページ =====
+  - name: "pages"
+    label: "📄 固定ページ"
+    label_singular: "ページ"
+    description: "サイトの各ページ本文を編集します。"
+    files:
+      - file: "src/index.md"
+        label: "🌱 トップ"
+        name: "index"
+        fields:
+          - { label: "ページタイトル", name: "title", widget: "string" }
+          - { label: "絵文字（アイコン）", name: "emoji", widget: "string", required: false }
+          - { label: "リード（タイトル下の一文）", name: "lead", widget: "string", required: false }
+          - { label: "ページ説明（SEO用）", name: "description", widget: "string", required: false }
+          - { label: "URL（変更不要）", name: "permalink", widget: "hidden", default: "/" }
+          - { label: "レイアウト（変更不要）", name: "layout", widget: "hidden", default: "layout.njk" }
+          - { label: "本文", name: "body", widget: "markdown" }
+
+      - file: "src/kenkyukai.md"
+        label: "🌿 2025年度 CoReLo研究会"
+        name: "kenkyukai"
+        fields:
+          - { label: "ページタイトル", name: "title", widget: "string" }
+          - { label: "絵文字", name: "emoji", widget: "string", required: false }
+          - { label: "ページ説明", name: "description", widget: "string", required: false }
+          - { label: "URL", name: "permalink", widget: "hidden", default: "/kenkyukai/" }
+          - { label: "レイアウト", name: "layout", widget: "hidden", default: "layout.njk" }
+          - { label: "本文", name: "body", widget: "markdown" }
+
+      - file: "src/seminans.md"
+        label: "🌱 2025年度 セミナンス"
+        name: "seminans"
+        fields:
+          - { label: "ページタイトル", name: "title", widget: "string" }
+          - { label: "絵文字", name: "emoji", widget: "string", required: false }
+          - { label: "ページ説明", name: "description", widget: "string", required: false }
+          - { label: "URL", name: "permalink", widget: "hidden", default: "/seminans/" }
+          - { label: "レイアウト", name: "layout", widget: "hidden", default: "layout.njk" }
+          - { label: "本文", name: "body", widget: "markdown" }
+
+      - file: "src/kensa.md"
+        label: "📝 心理検査"
+        name: "kensa"
+        fields:
+          - { label: "ページタイトル", name: "title", widget: "string" }
+          - { label: "絵文字", name: "emoji", widget: "string", required: false }
+          - { label: "ページ説明", name: "description", widget: "string", required: false }
+          - { label: "URL", name: "permalink", widget: "hidden", default: "/kensa/" }
+          - { label: "レイアウト", name: "layout", widget: "hidden", default: "layout.njk" }
+          - { label: "本文", name: "body", widget: "markdown" }
+
+      - file: "src/archive.md"
+        label: "🎬 アーカイブ"
+        name: "archive"
+        fields:
+          - { label: "ページタイトル", name: "title", widget: "string" }
+          - { label: "絵文字", name: "emoji", widget: "string", required: false }
+          - { label: "ページ説明", name: "description", widget: "string", required: false }
+          - { label: "URL", name: "permalink", widget: "hidden", default: "/archive/" }
+          - { label: "レイアウト", name: "layout", widget: "hidden", default: "layout.njk" }
+          - { label: "本文", name: "body", widget: "markdown" }
+
+      - file: "src/contact.md"
+        label: "✉️ お問い合わせ"
+        name: "contact"
+        fields:
+          - { label: "ページタイトル", name: "title", widget: "string" }
+          - { label: "絵文字", name: "emoji", widget: "string", required: false }
+          - { label: "ページ説明", name: "description", widget: "string", required: false }
+          - { label: "URL", name: "permalink", widget: "hidden", default: "/contact/" }
+          - { label: "レイアウト", name: "layout", widget: "hidden", default: "layout.njk" }
+          - { label: "本文", name: "body", widget: "markdown" }
+
+      - file: "src/legal.md"
+        label: "🌀 特定商取引法に基づく表記"
+        name: "legal"
+        fields:
+          - { label: "ページタイトル", name: "title", widget: "string" }
+          - { label: "絵文字", name: "emoji", widget: "string", required: false }
+          - { label: "ページ説明", name: "description", widget: "string", required: false }
+          - { label: "URL", name: "permalink", widget: "hidden", default: "/legal/" }
+          - { label: "レイアウト", name: "layout", widget: "hidden", default: "layout.njk" }
+          - { label: "本文", name: "body", widget: "markdown" }
+
+      - file: "src/privacy.md"
+        label: "🌀 プライバシーポリシー"
+        name: "privacy"
+        fields:
+          - { label: "ページタイトル", name: "title", widget: "string" }
+          - { label: "絵文字", name: "emoji", widget: "string", required: false }
+          - { label: "ページ説明", name: "description", widget: "string", required: false }
+          - { label: "URL", name: "permalink", widget: "hidden", default: "/privacy/" }
+          - { label: "レイアウト", name: "layout", widget: "hidden", default: "layout.njk" }
+          - { label: "本文", name: "body", widget: "markdown" }
+
+  # ===== サイト全体の設定 =====
+  - name: "settings"
+    label: "⚙️ サイト設定"
+    files:
+      - file: "src/_data/site.json"
+        label: "サイト情報・ナビゲーション"
+        name: "site"
+        fields:
+          - { label: "サイト名", name: "title", widget: "string" }
+          - { label: "サイト紹介文", name: "tagline", widget: "string" }
+          - { label: "ドメイン", name: "domain", widget: "string" }
+          - { label: "問い合わせメール", name: "email", widget: "string" }
+          - label: "ナビゲーション項目"
+            name: "nav"
+            widget: "list"
+            fields:
+              - { label: "表示名", name: "label", widget: "string" }
+              - { label: "リンク先 (例: /kenkyukai/)", name: "url", widget: "string" }

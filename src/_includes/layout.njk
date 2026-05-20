@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title }}{% if title != site.title %} | {{ site.title }}{% endif %}</title>
+  {% if description %}<meta name="description" content="{{ description }}">{% endif %}
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="global-header">
+    <div class="global-header-inner">
+      <a class="brand" href="/">
+        <span class="brand-emoji">🌱</span>
+        <span>{{ site.title }}</span>
+      </a>
+      <nav class="global-nav">
+        {% for item in site.nav %}
+          <a href="{{ item.url }}"{% if item.url == page.url %} class="active"{% endif %}>{{ item.label }}</a>
+        {% endfor %}
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1 class="page-title">
+      {% if emoji %}<span class="emoji">{{ emoji }}</span>{% endif %}
+      <span>{{ title }}</span>
+    </h1>
+    {% if lead %}<p class="page-lead">{{ lead }}</p>{% endif %}
+
+    {{ content | safe }}
+  </main>
+
+  <footer>
+    <div class="footer-links">
+      <a href="/legal/">特定商取引法に基づく表記</a>
+      <a href="/privacy/">プライバシーポリシー</a>
+      <a href="/contact/">お問い合わせ</a>
+    </div>
+    <div>© {{ site.title }}</div>
+  </footer>
+</body>
+</html>

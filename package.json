@@ -1,0 +1,13 @@
+{
+  "name": "corelo-site",
+  "version": "1.0.0",
+  "description": "CoReLo（心理専門職 教育事業）ホームページ",
+  "private": true,
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0"
+  }
+}
