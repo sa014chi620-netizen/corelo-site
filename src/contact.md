@@ -30,13 +30,13 @@ layout: layout.njk
   <li>
     <a class="page-card" href="/kenkyukai/#参加申し込み">
       <span class="page-card-icon">🌿</span>
-      <span class="page-card-title">2025年度 CoReLo研究会 のお申し込み</span>
+      <span class="page-card-title">2026年度 CoReLo研究会 のお申し込み</span>
     </a>
   </li>
   <li>
     <a class="page-card" href="/seminans/#参加申し込み">
       <span class="page-card-icon">🌱</span>
-      <span class="page-card-title">2025年度 CoReLo研究会 セミナンス のお申し込み</span>
+      <span class="page-card-title">2026年度 CoReLo研究会 セミナンス のお申し込み</span>
     </a>
   </li>
   <li>
