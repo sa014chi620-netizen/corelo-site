@@ -1,5 +1,5 @@
 ---
-title: 心理専門職向け心理検査（仮）
+title: 心理専門職向け心理検査
 emoji: 📝
 description: 心理専門職を対象とした心理検査（TEG、バウムテスト、WAIS-IV）の受検機会をご提供します。
 permalink: /kensa/
