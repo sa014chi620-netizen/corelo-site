@@ -15,8 +15,8 @@ layout: layout.njk
   <div class="callout-content">
     <p>
       <strong>CoReLo（コレロ）</strong><br>
-      代表：有馬 佐知江・多田 潤司<br>
-      住所：福岡県福岡市中央区六本松4-8-12-502<br>
+      代表：有馬 佐知江<br>
+      住所：福岡県福岡市中央区六本松4-3-11-212<br>
       電話番号：090-6799-4949<br>
       メールアドレス：co.re.lo.0529(at-mark)gmail.com
     </p>
